@@ -1,2 +1,77 @@
-Hardly empty file :)
-new branch changes
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git
+$ git init
+Initialized empty Git repository in D:/Web-UI LITS/Git/.git/
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (master)
+$ git clone https://github.com/pkatia/Homework2.git
+Cloning into 'Homework2'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (master)
+$ git config --global user.email pkatia@ukr.net
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (master)
+$ git add Homework2/
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (master)
+$ git commit
+[master (root-commit) b554324] First commit!
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Homework2/commands.txt
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (master)
+$ git remote add origin https://github.com/pkatia/Homework2.git
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (master)
+$ git push -u origin master
+Counting objects: 4, done.
+Writing objects: 100% (4/4), 273 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/pkatia/Homework2.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (master)
+$ git branch new-branch
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (master)
+$ git checkout new-branch
+Switched to branch 'new-branch'
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (new-branch)
+$ git add .
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (new-branch)
+$ git commit
+[new-branch dd4af2c] Commit in new-brach updated file commands.txt
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (new-branch)
+$ git push origin new-branch
+Counting objects: 4, done.
+Writing objects: 100% (4/4), 345 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/pkatia/Homework2.git
+ * [new branch]      new-branch -> new-branch
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (new-branch)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (master)
+$ git merge new-branch
+Updating b554324..dd4af2c
+Fast-forward
+ Homework2/commands.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Tauren@Matrix MINGW64 /d/Web-UI LITS/Git (master)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/pkatia/Homework2.git
+   b554324..dd4af2c  master -> master
+
+
+
